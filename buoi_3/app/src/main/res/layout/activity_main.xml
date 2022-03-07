@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="450dp"
+        android:layout_height="135dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/img"
+        tools:ignore="Suspicious0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_weight="2"
+        android:weightSum="6"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_weight="1"
+            android:text="English"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:ignore="Suspicious0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:weightSum="4"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Số điện thoại hoặc email"
+                android:textColor="#666" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Mật khẩu"
+                android:textColor="#666" />
+
+            <Button
+                android:id="@+id/loginAccount"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0000FF"
+                android:textSize="20dp"
+                android:text="Đăng nhập" />
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:text="Quên mật khẩu?"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_marginLeft="45dp"
+                android:textColor="#003399"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="45dp"
+            android:text="--------------Hoặc--------------"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/creatAccount"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="45dp"
+        android:backgroundTint="#33CC33"
+        android:layout_marginTop="50dp"
+        android:text="Tạo tài khoản FaceBook mới" />
+</LinearLayout>
